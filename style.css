@@ -33,8 +33,9 @@ label {
 }
 
 .container {
+    margin: 3rem;
     width: 350px;
-    height: 3350px;
+    height: 350px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -44,7 +45,7 @@ label {
 .element {
     width: 100px;
     height: 100px;
-    border: 1px solid;
+    border: 1px solid var(--dark-color);
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
