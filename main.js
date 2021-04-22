@@ -35,8 +35,10 @@ elements.forEach(function(element) {
             alert("You are human!");
             checkbox.checked = true;
             submitBtn.disabled = false;
+            submitBtn.classList.remove("btn-light");
+            submitBtn.classList.add("btn-success");
         } else {
-            alert("Please verify that you are human!")
+            alert("Please verify that you are human!");
             location.reload(true);
         }
     });
