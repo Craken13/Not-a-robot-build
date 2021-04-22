@@ -32,8 +32,8 @@ function getRandomColor() {
 elements.forEach(function(element) {
     element.addEventListener("click", function() {
         if (element.innerHTML === selectColor.innerHTML) {
-            alert("You are human!");
             checkbox.checked = true;
+            alert("You are human!");
             submitBtn.disabled = false;
             submitBtn.classList.remove("btn-light");
             submitBtn.classList.add("btn-success");
