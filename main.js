@@ -33,6 +33,11 @@ elements.forEach(function(element) {
     element.addEventListener("click", function() {
         if (element.innerHTML === selectColor.innerHTML) {
             alert("You are human!");
-        } else {}
+            checkbox.checked = true;
+            submitBtn.disabled = false;
+        } else {
+            alert("Please verify that you are human!")
+            location.reload(true);
+        }
     });
 });
